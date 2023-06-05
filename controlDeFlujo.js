@@ -72,6 +72,8 @@ else
 
 let edadAxel = 17;
 let edadParaEntrarALaFiesta = 18;
+let dineroAxel = 50;
+
 
 if (edadAxel<edadParaEntrarALaFiesta){
     console.log("no puedes entrar")
@@ -138,3 +140,107 @@ if (edadDeDavid>edadPermitidaDelAntro)
     }
 
 
+
+    /*Switch
+
+Esta condicional nos permite hacer multiples operaciones y tomar decisiones en funcion de distintos estados de las variables. 
+Evalua una expresion comparando el valor de un dato o variable, y ejecutando la instruccion asociada a ese caso.
+
+
+ - case: Evalua el caso o condicion asociado que dispara un bloque de codigo
+ - break: Termina el proceso sin que tengamos que pasar por todas las iteraciones o casos.
+ - default: Termina el proceso en caso de que ninguna de las evaluaciones sea la correcta (similar al else)
+
+
+
+switch (expresion o condicion){
+    case valor1:
+        //Codigo que se ejecuta si la condicion es igual a valor1
+    break;
+
+    case valor2:
+        //Codigo que se ejecuta si la condicion es igual a valor2
+    break;
+
+    case valor3:
+        //Codigo que se ejecuta si la condicion es igual a valor3
+    break;
+
+    case valor4:
+        //Codigo que se ejecuta si la condicion es igual a valor4
+    break;
+
+    case valor5:
+        //Codigo que se ejecuta si la condicion es igual a valor5
+    break;
+
+    default:
+        //Ingresaste un piso incorrecto (un bloque de codigo que se ejecuta si no se cumple con ninguna de las condiciones anteriores)
+} */
+
+let pisoDestino = prompt("ingrese piso destino del 1 al 5")
+
+
+switch (pisoDestino){
+    //para jugar con los casos, el tipo de dato debe coincidir
+
+    case "1":
+        console.log("vamos a piso 1")
+        break;
+
+    case "2":
+        console.log("vamos a piso 2")
+        break;
+
+    case "3":
+        console.log("vamos a piso 3")
+        break;
+    default:
+        console.log("piso invalido")
+
+
+        
+    
+
+}
+
+
+
+//ejercicios Eevee
+
+
+var elementoEvolucion = prompt("Ingresa el numero del metodo que quieres usar para evolucionar a eevee: 1- Piedra agua, 2-Piedra Fuego, 3-Piedra trueno, 4-Piedra hoja, 5-Piedra hielo, 6-amistad de Día, 7-amistad de noche, 8-Moviemiento de Hada")
+
+switch (elementoEvolucion)
+{
+    case "1":
+        console.log("Tu Eevee ha evolucionado a flareon")    
+    break;
+    case "2":
+        console.log("Tu Eevee ha evolucionado a Jolteon")    
+    break;
+    case "3":
+        console.log("Tu Eevee ha evolucionado a vaporeon")    
+    break;
+    case "4":
+        console.log("Tu Eevee ha evolucionado a Leafeon")    
+    break;
+    case "5":
+        console.log("Tu Eevee ha evolucionado a Glaceon")    
+    break;
+    case "6":
+        console.log("Tu Eevee ha evolucionado a Espeon")    
+    break;
+    case "7":
+        console.log("Tu Eevee ha evolucionado a Umbreon")    
+    break;
+    case "8":
+        console.log("Tu Eevee ha evolucionado a Sylveon")    
+    break;
+    default:
+
+    console.log("Tu Eevee no ha podido evolucionar")
+        break;
+
+
+}
